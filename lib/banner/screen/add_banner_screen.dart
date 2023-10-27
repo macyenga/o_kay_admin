@@ -68,8 +68,8 @@ class _AddBannerScreenState extends State<AddBannerScreen> {
 
   onShopClick(String shopId, String shopName) {
     if (shopListId.contains(shopId)) {
-      openSnackbar(
-          context, 'This shop has already been added!', scheme.primary);
+      openSnackbar(context, 'This shop has already been added!',
+          Color.fromARGB(255, 16, 2, 214));
     } else {
       shopListId.add(shopId);
       shopListName.add(shopName);
@@ -80,8 +80,8 @@ class _AddBannerScreenState extends State<AddBannerScreen> {
 
   selectVoucher(String id, String name) {
     if (voucherId.isNotEmpty || voucherName.isNotEmpty) {
-      openSnackbar(
-          context, 'This voucher has already been added!', scheme.primary);
+      openSnackbar(context, 'This voucher has already been added!',
+          Color.fromARGB(255, 16, 2, 214));
     } else {
       voucherName = name;
       voucherId = id;
@@ -268,7 +268,7 @@ class _AddBannerScreenState extends State<AddBannerScreen> {
                           ),
                           Icon(
                             Icons.add,
-                            color: scheme.primary,
+                            color: Color.fromARGB(255, 16, 2, 214),
                           )
                         ],
                       ),
@@ -294,7 +294,7 @@ class _AddBannerScreenState extends State<AddBannerScreen> {
                                   },
                                   child: Icon(
                                     Icons.delete_outline,
-                                    color: scheme.primary,
+                                    color: Color.fromARGB(255, 16, 2, 214),
                                   ),
                                 )
                               ],
@@ -323,7 +323,7 @@ class _AddBannerScreenState extends State<AddBannerScreen> {
                           ),
                           Icon(
                             Icons.add,
-                            color: scheme.primary,
+                            color: Color.fromARGB(255, 16, 2, 214),
                           )
                         ],
                       ),
@@ -344,7 +344,7 @@ class _AddBannerScreenState extends State<AddBannerScreen> {
                                   },
                                   child: Icon(
                                     Icons.delete_outline,
-                                    color: scheme.primary,
+                                    color: Color.fromARGB(255, 16, 2, 214),
                                   ),
                                 )
                               ],

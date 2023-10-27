@@ -33,7 +33,7 @@
 //           Center(
 //               child: Icon(
 //             Icons.location_on_rounded,
-//             color: scheme.primary,
+//             color: Color.fromARGB(255, 16, 2, 214),
 //             size: 40,
 //           )),
 //         ],

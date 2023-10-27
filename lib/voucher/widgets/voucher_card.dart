@@ -30,7 +30,7 @@ class VoucherCard extends StatelessWidget {
                 children: [
                   Icon(
                     Icons.percent,
-                    color: scheme.primary,
+                    color: Color.fromARGB(255, 16, 2, 214),
                   ),
                   const SizedBox(width: 10),
                   Expanded(
@@ -58,7 +58,7 @@ class VoucherCard extends StatelessWidget {
                             const SizedBox(width: 5),
                             Icon(
                               Icons.info_outline,
-                              color: scheme.primary,
+                              color: Color.fromARGB(255, 16, 2, 214),
                               size: 15,
                             ),
                             const SizedBox(width: 5),
@@ -97,7 +97,7 @@ class VoucherCard extends StatelessWidget {
                     },
                     child: Icon(
                       Icons.delete_outline_outlined,
-                      color: scheme.primary,
+                      color: Color.fromARGB(255, 16, 2, 214),
                     ),
                   )
                 ],
@@ -128,7 +128,7 @@ class VoucherCard extends StatelessWidget {
                     'Details',
                     style: TextStyle(
                       fontSize: 15,
-                      color: scheme.primary,
+                      color: Color.fromARGB(255, 16, 2, 214),
                       fontWeight: FontWeight.w600,
                     ),
                   )

@@ -20,9 +20,9 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
-        foregroundColor: scheme.primary,
+        foregroundColor: Color.fromARGB(255, 16, 2, 214),
         title: const Text(
-          'FoodPanda Admin',
+          'Kay  Admin',
           style: TextStyle(
             fontSize: 16,
             color: Colors.black,

@@ -67,7 +67,8 @@ class _LoginScreenState extends State<LoginScreen> {
       await internetProvider.checkInternetConnection();
       if (internetProvider.hasInternet == false) {
         Navigator.pop(context);
-        openSnackbar(context, 'Check your internet connection', scheme.primary);
+        openSnackbar(context, 'Check your internet connection',
+            Color.fromARGB(255, 16, 2, 214));
       } else {
         await authenticationProvider
             .signInWithEmailAndPassword(
@@ -79,7 +80,7 @@ class _LoginScreenState extends State<LoginScreen> {
             openSnackbar(
               context,
               authenticationProvider.errorCode,
-              scheme.primary,
+              Color.fromARGB(255, 16, 2, 214),
             );
             authenticationProvider.resetError();
           } else {
@@ -100,7 +101,7 @@ class _LoginScreenState extends State<LoginScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
-        foregroundColor: scheme.primary,
+        foregroundColor: Color.fromARGB(255, 16, 2, 214),
         actions: [
           TextButton(
             onPressed: passwordText.isEmpty ? null : handleLogin,
@@ -109,7 +110,7 @@ class _LoginScreenState extends State<LoginScreen> {
               style: TextStyle(
                 color: passwordText.isEmpty || emailText.isEmpty
                     ? Colors.grey[400]
-                    : scheme.primary,
+                    : Color.fromARGB(255, 16, 2, 214),
               ),
             ),
           )
@@ -126,7 +127,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   Padding(
                     padding: const EdgeInsets.only(left: 15, bottom: 20),
                     child: Image.asset(
-                      'assets/images/login_icon.png',
+                      'assets/images/login.png',
                       width: 60,
                     ),
                   ),
@@ -166,7 +167,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     child: Text(
                       'I forgot my password',
                       style: TextStyle(
-                        color: scheme.primary,
+                        color: Color.fromARGB(255, 16, 2, 214),
                       ),
                     ),
                   )

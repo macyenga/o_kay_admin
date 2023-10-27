@@ -39,7 +39,7 @@ class SearchUserScreenState extends State<SearchUserScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
-        foregroundColor: scheme.primary,
+        foregroundColor: Color.fromARGB(255, 16, 2, 214),
         elevation: 0.5,
         titleSpacing: 0,
         title: Padding(

@@ -78,7 +78,7 @@ class RestaurantCard extends StatelessWidget {
         Text(
           '${shop.houseNumber} ${shop.street} ${shop.province}',
           style: TextStyle(
-            color: scheme.primary,
+            color: Color.fromARGB(255, 16, 2, 214),
             fontSize: 12,
           ),
         ),

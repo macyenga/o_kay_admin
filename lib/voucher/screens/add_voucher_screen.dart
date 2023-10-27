@@ -69,7 +69,7 @@ class _AddVoucherScreenState extends State<AddVoucherScreen> {
     if (result == null) {
       Navigator.pop(context);
     } else {
-      openSnackbar(context, result, scheme.primary);
+      openSnackbar(context, result, Color.fromARGB(255, 16, 2, 214));
     }
   }
 
@@ -164,7 +164,7 @@ class _AddVoucherScreenState extends State<AddVoucherScreen> {
                             child: Text('Only available for new user only')),
                         Switch(
                           value: isNewUser,
-                          activeColor: scheme.primary,
+                          activeColor: Color.fromARGB(255, 16, 2, 214),
                           onChanged: (value) {
                             setState(() {
                               isNewUser = value;
@@ -193,7 +193,7 @@ class _AddVoucherScreenState extends State<AddVoucherScreen> {
                         Text('Percentage'),
                         Switch(
                           value: isDollar,
-                          activeColor: scheme.primary,
+                          activeColor: Color.fromARGB(255, 16, 2, 214),
                           onChanged: (value) {
                             setState(() {
                               isDollar = value;

@@ -24,7 +24,7 @@ Future<void> showDateDialog({
 
         final config = CalendarDatePicker2Config(
           calendarType: CalendarDatePicker2Type.range,
-          selectedDayHighlightColor: scheme.primary,
+          selectedDayHighlightColor: Color.fromARGB(255, 16, 2, 214),
           weekdayLabelTextStyle: const TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,

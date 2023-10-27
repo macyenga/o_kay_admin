@@ -7,10 +7,13 @@ import 'package:o_kay_admin/providers/internet_provider.dart'; // Updated import
 import 'package:o_kay_admin/router.dart'; // Updated import
 import 'package:o_kay_admin/splash_screen/screens/splash_screen.dart'; // Updated import
 import 'package:provider/provider.dart';
+import 'firebase_options.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
     statusBarColor: Colors.transparent,
   ));
@@ -34,11 +37,11 @@ class MyApp extends StatelessWidget {
           // useMaterial3: true,
           colorScheme: scheme,
           scaffoldBackgroundColor: Colors.white,
-          dialogBackgroundColor: Colors white,
+          dialogBackgroundColor: Colors.amberAccent,
           appBarTheme: const AppBarTheme(
             elevation: 0,
           ),
-          unselectedWidgetColor: scheme.primary,
+          unselectedWidgetColor: Color.fromARGB(255, 16, 2, 214),
         ),
         onGenerateRoute: (settings) => generateRoute(settings),
         home: const SplashScreen(),

@@ -28,7 +28,7 @@ class _AuthenticationScreenState extends State<AuthenticationScreen> {
               height: MediaQuery.of(context).size.height * 0.55,
               child: Center(
                 child: Image.asset(
-                  'assets/images/foodpanda_logo.png',
+                  'assets/images/trakay.png',
                   width: 200,
                 ),
               ),
@@ -45,7 +45,7 @@ class _AuthenticationScreenState extends State<AuthenticationScreen> {
               ),
             ),
             Text(
-              'Welcome to FoodPanda!',
+              'Welcome to Kay!',
               style: TextStyle(
                 color: Colors.grey[500]!,
                 fontWeight: FontWeight.w500,

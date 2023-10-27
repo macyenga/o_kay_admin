@@ -128,7 +128,8 @@ class _BannerScreenState extends State<BannerScreen> {
                                               ),
                                               Switch(
                                                 value: banner.isApproved,
-                                                activeColor: scheme.primary,
+                                                activeColor: Color.fromARGB(
+                                                    255, 16, 2, 214),
                                                 onChanged: (value) async {
                                                   await bannerController
                                                       .changeBannerApproved(
@@ -168,7 +169,8 @@ class _BannerScreenState extends State<BannerScreen> {
                                                 },
                                                 child: Icon(
                                                   Icons.delete_outline_outlined,
-                                                  color: scheme.primary,
+                                                  color: Color.fromARGB(
+                                                      255, 16, 2, 214),
                                                 ),
                                               ),
                                             ],
@@ -188,7 +190,7 @@ class _BannerScreenState extends State<BannerScreen> {
                 onTap: () {
                   Navigator.pushNamed(context, AddBannerScreen.routeName);
                 },
-                splashColor: scheme.primary.withOpacity(1),
+                splashColor: Color.fromARGB(255, 16, 2, 214).withOpacity(1),
                 child: Ink(
                   width: double.infinity,
                   height: 150,
@@ -196,12 +198,12 @@ class _BannerScreenState extends State<BannerScreen> {
                     color: Colors.grey[300],
                     borderRadius: BorderRadius.circular(15),
                     border: Border.all(
-                      color: scheme.primary.withOpacity(0.5),
+                      color: Color.fromARGB(255, 16, 2, 214).withOpacity(0.5),
                     ),
                   ),
                   child: Icon(
                     Icons.add,
-                    color: scheme.primary,
+                    color: Color.fromARGB(255, 16, 2, 214),
                     size: 50,
                   ),
                 ),
